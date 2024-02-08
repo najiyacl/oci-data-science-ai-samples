@@ -1,0 +1,19 @@
+db:
+  configuredDB: MYSQL
+  mysql:
+    authType: BASIC
+    basic:
+      password: Helloworld@123
+    jdbcURL: jdbc:mysql://10.0.10.217:3306/FeatureStore?createDatabaseIfNotExist=true
+    username: admin
+imagePullSecrets:
+- name: fs-ocir-secret
+oci_meta:
+  images:
+    api:
+      image: /feature-store
+      tag: YqRZG-te1agobwa96i-idogsu2ylimg-feature-store-api-1.1.1
+    authoriser:
+      image: dummy
+      tag: dummy
+  repo: iad.ocir.io/idogsu2ylimg
