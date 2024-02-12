@@ -1,9 +1,10 @@
 db:
   configuredDB: MYSQL
   mysql:
-    authType: BASIC
-    basic:
-      password: Helloworld@123
+    authType: VAULT
+    vault:
+      vaultOcid: ocid1.vault.oc1.iad.dvshi6ueaahne.abuwcljtgjszwmwx4puvb3anlbf4inmrn427f52yj4s2c6zz2ia7cl5r34ba
+      secretName: test-harsh
     jdbcURL: jdbc:mysql://10.0.10.217:3306/FeatureStore?createDatabaseIfNotExist=true
     username: admin
 imagePullSecrets:
